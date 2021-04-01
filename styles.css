@@ -1,0 +1,193 @@
+body {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+  
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black , blue);
+}
+  
+#navbar ul {
+    list-style: none;
+    display: flex;
+    padding-right: 4em;
+}
+  
+#navbar li {
+    text-decoration: none;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-right: solid white;
+}
+  
+#navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+  
+#navbar li a:hover {
+    color: gray;
+}
+  
+#navbar li a:active {
+    color: cyan;
+}
+  
+#welcome-section {
+    text-align: center;
+    width: 100%;
+    height: 82.4vh;
+    background-image: linear-gradient(135deg, black, blue);
+    padding-bottom: 4em;
+    padding-top: 3em;
+}
+  
+#welcome-section h1 {
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+}
+  
+#welcome-section h1:hover {
+    animation-name: an1;
+    animation-duration: 1s;
+}
+  
+@keyframes an1 {
+    0% {
+      color: white;
+    }
+    
+    25% {
+      padding-right: 50px;
+    }
+    
+    50% {
+      color: black;
+    }
+    
+    75% {
+      padding-left: 50px;
+    }
+    
+    100% {
+      color: white;
+    }
+    
+}
+  
+#welcome-section p {
+    color: white;
+    font-size: 40px;
+}
+  
+#projects {
+    padding-top: 10px;
+    border-top: solid white 2px;
+    display: block;
+    background-image: linear-gradient(135deg, white , gray);
+}
+  
+#projects h2 {
+    padding-left: 3em;
+    font-size: 30px;
+    color: black;
+}
+  
+.project-tile {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 3em;
+    padding-top: 1em;
+}
+  
+.project-tile li {
+    font-size: 20px;
+    border: solid black;
+    padding: 10px;
+    background-image: linear-gradient( white , lightgray);
+}
+  
+.project-tile li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+  
+.project-tile li:hover {
+    background-image: linear-gradient( white , darkgray);
+    border: solid blue;
+}
+  
+.project-tile li:active {
+    background-image: linear-gradient( white , blue);
+    border: solid blue;
+}
+  
+#contact-info {
+    padding-bottom: 4em;
+    padding-top: 3em;
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(135deg, black, blue);
+}
+  
+#contact-info h3 {
+    color: white;
+    font-size: 40px;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: 2px 2px blue;
+    cursor: pointer;
+}
+  
+#contact-desc h3:hover {
+    text-shadow: 3px 3px 5px cyan;
+}
+  
+#contact-desc p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+  
+#contact-links {
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+  
+#contact-links a {
+    font-size: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+  
+#contact-links p {
+    color: white;
+    padding-top: 15px;
+}
+  
+#contact-links a:hover {
+    color: lightblue;
+}
+  
+#last:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
