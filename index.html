@@ -1,45 +1,73 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Persona Favorita :3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titleText">
+        <p>
+            <span class="text_first">
+                <span class="text_word">Ya es</span>
+                <br>
+            </span>
+        </p>
+        <span class="text_second">
+            <span class="text_word">1 año :3</span>
+            <br>
+        </span>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/01.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/01.jpg" onclick=openFullImg(this.src)>
+        <img src="images/02.jpg" onclick=openFullImg(this.src)>
+        <img src="images/03.jpg" onclick=openFullImg(this.src)>
+        <img src="images/04.jpg" onclick=openFullImg(this.src)>
+        <img src="images/05.jpg" onclick=openFullImg(this.src)>
+        <img src="images/06.jpg" onclick=openFullImg(this.src)>
+        <img src="images/07.jpg" onclick=openFullImg(this.src)>
+        <img src="images/08.jpg" onclick=openFullImg(this.src)>
+        <img src="images/09.jpg" onclick=openFullImg(this.src)>
+        <img src="images/10.jpg" onclick=openFullImg(this.src)>
+        <img src="images/11.jpg" onclick=openFullImg(this.src)>
+        <img src="images/12.jpg" onclick=openFullImg(this.src)>
+        <img src="images/13.jpg" onclick=openFullImg(this.src)>
+        <img src="images/14.jpg" onclick=openFullImg(this.src)>
+        <img src="images/15.jpg" onclick=openFullImg(this.src)>
+    </div>
+    <div class="titleText2">
+        <p>
+            <span class="text_first">
+                <span class="text_word">Por muchos más</span>
+                <br>
+            </span>
+        </p>
+        <span class="text_second2">
+            <span class="text_word">momentazos con usted :D</span>
+            <br>
+        </span>
+    </div>
+    <br>
 
-<html lang="en">
-    <head>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <title>Personal Porfolio Webpage</title>
-        <link rel="stylesheet" href="styles.css"></link>
-    </head>
-    <body>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#welcome-section">About</a></li>
-                <li><a href="#projects">My Work</li>
-                <li><a href="#contact-info">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="welcome-section">
-            <h1>Hello!</h1>
-            <p>My name is Luis Cagigal,</p>
-            <p>and I make webpages!</p>
-        </section>
-        <section id="projects">
-            <h2>Here are some of my projects:</h2>
-            <div class="project-list">
-                <ul class="project-tile">
-                    <li><a href="https://codepen.io/Zeppln/full/RwoKGev" target="_blank">Jimi Hendrix Tribute Page</a></li>
-                    <li><a href="https://codepen.io/Zeppln/pen/mdORrzo" target="_blank">Survey Form in HTML</a></li>
-                    <li><a href="https://codepen.io/Zeppln/full/KKNGxpv" target="_blank">Python Technical Documentation Page</a></li>
-                </ul>
-            </div>
-        </section>
-        <section id="contact-info">
-            <div id="contact-desc">
-                <h3>Interested?</h3>
-                <p>Get in touch with me through these platforms:</p>
-            </div>
-            <div id="contact-links">
-                <a href="https://github.com/LuchoC976" id="profile-link" target="_blank">GitHub</a>
-                <a href="https://www.facebook.com/luis.cagigal.5/" id="profile-link" target="_blank">Facebook</a>
-                <p>Ot you can send an email at:</p>
-                <p id="last">cagigalluis@gmail.com</p>
-            </div>
-        </section>
-    </body>
+<script> 
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg() {
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
 </html>
